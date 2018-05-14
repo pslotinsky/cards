@@ -1,0 +1,11 @@
+.l-app {
+    padding: 24px;
+
+    color: rgba(0, 0, 0, 0.8);
+
+    font: 12px/1.4 Roboto, Arial;
+}
+
+.l-app__deck {
+    margin-bottom: 14px;
+}

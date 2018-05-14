@@ -1,0 +1,22 @@
+.b-deck__name {
+    margin: 0 0 8px;
+
+    color: #202124;
+
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.b-deck__cards {
+    display: flex;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.b-deck__card {
+    margin: 0 10px 10px 0;
+}
