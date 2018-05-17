@@ -7,6 +7,7 @@ import {
     DropTargetSpec
 } from 'react-dnd';
 
+import { Card as CardModel } from '../../models/Card';
 import { Deck as DeckModel } from '../../models/Deck';
 
 import { Deck } from './Deck';
@@ -15,12 +16,14 @@ interface IDropTargetDeckProps {
     deck: DeckModel;
     connectDropTarget?: ConnectDropTarget;
     isOver?: boolean;
+    onCardDropped(card: CardModel, deck: DeckModel): void;
 }
 
 const target: DropTargetSpec<IDropTargetDeckProps> = {
     drop(props: IDropTargetDeckProps, monitor: DropTargetMonitor) {
         const { card } = monitor.getItem() as any;
-        setTimeout(() => props.deck.add(card), 0);
+        const { deck, onCardDropped } = props;
+        onCardDropped(card, deck);
     }
 };
 

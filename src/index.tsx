@@ -3,11 +3,15 @@ import * as ReactDOM from 'react-dom';
 
 import './index.css';
 
-import App from './app/App';
+import { Store } from './models/Store';
+
+import { App } from './App';
 import registerServiceWorker from './registerServiceWorker';
 
+const store = new Store();
+
 ReactDOM.render(
-    <App />,
+    <App store={store} />,
     document.getElementById('root')
 );
 

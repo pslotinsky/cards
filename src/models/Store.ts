@@ -11,7 +11,7 @@ export class Store {
                 budget: 500,
                 cards: [
                     new Card({
-                        image: require('./cards/dpanov.jpg'),
+                        image: require('./images/dpanov.jpg'),
                         jobs: [Job.Frontend, Job.Teamlead],
                         name: 'Дима Панов',
                         rarity: Rarity.Epic,
@@ -30,14 +30,14 @@ export class Store {
                         salary: 12
                     }),
                     new Card({
-                        image: require('./cards/aserkerov.png'),
+                        image: require('./images/aserkerov.png'),
                         jobs: [Job.Backend],
                         name: 'Адиль Серкеров',
                         rarity: Rarity.Common,
                         salary: 9
                     }),
                     new Card({
-                        image: require('./cards/okurochkin.png'),
+                        image: require('./images/okurochkin.png'),
                         jobs: [Job.Backend],
                         name: 'Олег Курочкин',
                         rarity: Rarity.Common,
@@ -56,14 +56,14 @@ export class Store {
                         salary: 18
                     }),
                     new Card({
-                        image: require('./cards/slukovkina.png'),
+                        image: require('./images/slukovkina.png'),
                         jobs: [Job.Frontend],
                         name: 'Соня Луковкина',
                         rarity: Rarity.Common,
                         salary: 6
                     }),
                     new Card({
-                        image: require('./cards/mratilainen.png'),
+                        image: require('./images/mratilainen.png'),
                         jobs: [Job.Frontend],
                         name: 'Мика Ратиляйнен',
                         rarity: Rarity.Common,

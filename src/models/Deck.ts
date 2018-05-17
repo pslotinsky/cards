@@ -42,13 +42,19 @@ export class Deck {
         return `${this.salaryValue}$`;
     }
 
+    @autobind
     public add(card: Card): void {
         this.cards.push(card);
     }
 
     @autobind
     public remove(card: Card): void {
-        remove(this.cards, item => (item.name === card.name));
+        remove(this.cards, item => card.isEqual(item));
+    }
+
+    @autobind
+    public contains(card: Card): boolean {
+        return this.cards.some(item => card.isEqual(item));
     }
 
 }

@@ -23,7 +23,7 @@ export class Deck extends React.Component<IDeckProps> {
                 <ul className="b-deck__cards">
                     {deck.cards.map(card => (
                         <li key={card.name} className="b-deck__card">
-                            <Card card={card} onDragEnd={deck.remove} />
+                            <Card card={card} />
                         </li>
                     ))}
                 </ul>
